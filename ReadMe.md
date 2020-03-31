@@ -23,13 +23,13 @@
 
 ```python tune_cal_guo.py -c VectorScaling```
 
-- Dirichlet with Off-diagonal and Intercept regularisation (Dir-L2):
+- Dirichlet with L2 regularisation (Dir-L2):
 
-```python -u tune_dirichlet_nn.py -i 0 -kf 5 -d --no_mus  # File number, number of cross-folds, double learning, no intercept tuning separately```
+```python -u tune_cal_odir.py -i 0 -kf 5 -d --no_mus  # File number, number of cross-folds, double learning, no intercept tuning separately```
 
 - Matrix Scaling with Off-diagonal and Intercept regularisation (MS-ODIR):
 
-```python -u tune_dirichlet_nn.py -i 0 -kf 5 -d --comp_l2 --use_logits  # File number, nr of cross-folds, double learning, complementary l2, use_logits```
+```python -u tune_cal_odir.py -i 0 -kf 5 -d --comp_l2 --use_logits  # File number, nr of cross-folds, double learning, complementary l2, use_logits```
 
 - Dirichlet with Off-diagonal and Intercept regularisation (Dir-ODIR):
 
